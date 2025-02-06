@@ -19,14 +19,16 @@ test
 
 ========================================================================================
 
-Jenkins CI/CD Pipeline with GitHub AWS
+#Automated CI/CD Pipeline with Jenkins, GitHub, and Docker on AWS EC2
 
-*Setup Jenkins on AWS EC2: Installed Jenkins on an EC2 instance, configured security group to allow port 8080.
+*Deployed Jenkins on an AWS EC2 instance, installing Java, adding Jenkins repository keys, and configuring systemd service.
 
-*Jenkins & GitHub Integration: Created a new Jenkins project, generated GitHub credentials, and configured repository & branch.
+*Installed and configured Docker for containerized application deployment.
 
-*Build & Deployment: Installed Node.js on EC2, ran the application, and opened port 8000 for access.
+*Built a Node.js application Docker image using a Dockerfile, exposing port 8000 for the app.
 
-*Dockerization: Created a Dockerfile, built and ran a Docker container for the app.
+*Integrated GitHub with Jenkins, using webhooks to trigger automated builds and deployments on code commits.
 
-*CI/CD Automation: Configured Jenkins to automate builds & deployments using webhooks and build triggers.
+*Configured Jenkins job to execute shell scripts for Docker build and container deployment, ensuring continuous integration and delivery (CI/CD).
+
+*Successfully automated end-to-end application deployment, improving efficiency and reliability.
